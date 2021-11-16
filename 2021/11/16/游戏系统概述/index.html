@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ch">
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Moonblast">
+
+
+    <meta name="subtitle" content="Game Analyze">
+
+
+    <meta name="description" content="欢迎来到月炸的神秘基地">
+
+
+
+
+
+<title>游戏系统概述 | Moonblast&#39;s Repo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+</style>
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/frame.js"></script>
+    
+
+
+
+
+
+
+
+  <meta name="generator" content="Hexo 5.4.0"></head>
+  <body>
+    <div class="mask-border">
+    </div>
+
+    <div class="wrapper">
+
+      <div class="header">
+  <div class="flex-container">
+    <div class="header-inner">
+      <div class="site-brand-container">
+        <a href="/">Frame.</a>
+      </div>
+      <div id="menu-btn" class="menu-btn" onclick="toggleMenu()">
+        Menu
+      </div>
+      <nav class="site-nav">
+        <ul class="menu-list">
+          
+            
+              <li class="menu-item">
+                <a href="/">Home</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/archives/">Archive</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/gallery/">Gallery</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/world/">World</a>
+              </li> 
+                   
+          
+            
+              <li class="menu-item">
+                <a href="/categories/personal/">Personal</a>
+              </li> 
+                   
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main">
+        <div class="flex-container">
+          <article id="post">
+
+  
+    <div class="post-head">
+    <div class="post-info">
+        <div class="tag-list">
+            
+        </div>
+        <div class="post-title">
+            
+            
+                游戏系统概述
+            
+            
+        </div>
+        <span class="post-date">
+            Nov 16, 2021
+        </span>
+    </div>
+    <div class="post-img">
+        
+            <img src="/categories/gallery/image/08.jpg" alt="featured_image">
+              
+    </div>
+</div>
+    <div class="post-content">
+    <h1 id="一、什么是游戏系统"><a href="#一、什么是游戏系统" class="headerlink" title="一、什么是游戏系统"></a>一、什么是游戏系统</h1><h2 id="1-1唯物辩证的角度（？）"><a href="#1-1唯物辩证的角度（？）" class="headerlink" title="1.1唯物辩证的角度（？）"></a>1.1唯物辩证的角度（？）</h2><p><strong>唯物辩证法</strong>告诉我们：</p>
+<p><strong>系统</strong>是由相互联系和相互作用的诸<strong>要素</strong>构成的统一整体，系统的基本特征是整体性、有序性和内部结构的优化趋向。</p>
+<p><strong>系统</strong>与要素的关系，一定意义上正是整体与部分之关系。</p>
+<p>而所谓<strong>游戏系统</strong>，指的是<strong>游戏中由相互作用的若干条设计机制组成的、具有特定功能作用的有机整体</strong>。</p>
+<p>它存在的意义，即是以模块化的方式展现游戏机制，并对于我们认识游戏、开发游戏、玩家体验游戏发挥具体的功能。也就是说，我们做一个游戏系统，就是用一系列相互关联的机制去实现一整个具体的目的/体验。</p>
+<h2 id="1-2狭义游戏系统"><a href="#1-2狭义游戏系统" class="headerlink" title="1.2狭义游戏系统"></a>1.2狭义游戏系统</h2><p><strong>唯物辩证法</strong>强调了游戏系统作为<strong>机制集合</strong>和<strong>整体</strong>的作用。</p>
+<p>现在我们从另一个学术的观点出发：</p>
+<p>Donella.H.Meadows在其作品《系统之美》中将元素和其相互关系定义为Stocks和Flows</p>
+<p>其中，关键之处有两点：1. 资源类型（Stocks） 2. 资源的流向与正负关系（Flow）。</p>
+<p><strong>平衡型循环（Balancing Loop）</strong></p>
+<p><img src="/categories/gallery/image/system/001.jpg"></p>
+<p><strong>增强型循环（Reinforcing Loop）</strong></p>
+<p><img src="/categories/gallery/image/system/002.jpg"></p>
+<p><strong>循环的组合</strong></p>
+<p><img src="/categories/gallery/image/system/003.jpg"></p>
+<p><strong>资源入口（Resources）与出口（Sink）：</strong></p>
+<p>几乎任何系统都是开放的——即需要有外部资源的流入，同时内部资源也会向外部流出。这就是所谓的“入口”与“出口”。</p>
+<p>通常而言，完全封闭的系统只存在与理论之中。</p>
+<br/>
+
+<br/>
+
+<p>从这里出发，我们可以得到一个新的概念：</p>
+<p><strong>游戏系统，是游戏状态之间的相互关系与流向。</strong></p>
+<p><strong>系统，是资源的循环与联系。游戏机制，是玩家的可执行的行为。</strong></p>
+<p><strong>玩家执行的行为，导致了资源的循环与流动。</strong></p>
+<br/>
+
+<br/>
+
+<hr>
+<h1 id="二、游戏系统的构成"><a href="#二、游戏系统的构成" class="headerlink" title="二、游戏系统的构成"></a>二、游戏系统的构成</h1><p>一般，从大的分类来说，游戏系统分为<strong>主系统</strong>和<strong>支系统</strong>。</p>
+<p>我们将<strong>规则繁多但功能和内容又相对趋同、互有联系的系统</strong>称作主系统，</p>
+<p>而<strong>规则较少且功能和内容相对独立、相对单一的系统</strong>称作支系统或子系统。</p>
+<p>以游戏一整个集合体来分，</p>
+<p>所有的游戏系统可以分为六大主系统。</p>
+<p>分别是：</p>
+<p>（1）<strong>基础系统</strong>，支撑游戏基本运行功能，但不属于游戏可玩内容的系统模块。如账号登录系统、游戏设置系统等。</p>
+<p>（2）<strong>养成系统</strong>，游戏中包括角色养成、宠物养成、装备养成等养成内容的系统模块。</p>
+<p>（3）<strong>战斗系统</strong>，包含怪物系统、技能系统、枪械系统（射击游戏）等在内的与游戏方式相关的系统模块。</p>
+<p>（4）<strong>玩法系统</strong>，游戏中的玩法，如战场玩法、竞技场玩法、副本关卡、开放世界等。</p>
+<p>（5）<strong>经济系统</strong>，游戏中涵盖产出、积累、交易、消耗等环节的系统模块。</p>
+<p>（6）<strong>社交系统</strong>，游戏中人人交互、人机交互等内容的系统模块。</p>
+<p><img src="/categories/gallery/image/system/004.jpg"></p>
+<p>【常见的游戏六大主系统】</p>
+<p>六大主系统继续细分，还有诸多的支系统。</p>
+<p>例如在养成系统中，就有着宠物养成系统、装备养成系统等多个子养成系统（支系统）。</p>
+<p>也就是说，诸多的支系统（也叫子系统）组合起来就成了主系统，</p>
+<p>而六大主系统则构成了整个游戏的系统框架。</p>
+<p>这就是我们业界常常说的“游戏系统框架”。</p>
+<p>这里需要注意的是，</p>
+<p>六大主系统之间不是互相独立的，而是互有联系、相辅相成。</p>
+<p>这主要是因为支撑主系统的支系统，本身有可能有属于两大主系统的设计内容。</p>
+<p>例如经济系统中的交易行为，本身也属于社交行为的一种，属于社交系统的一个部分。</p>
+<br/>
+
+<br/>
+
+<hr>
+<h1 id="三、如何构建游戏系统"><a href="#三、如何构建游戏系统" class="headerlink" title="三、如何构建游戏系统"></a>三、如何构建游戏系统</h1><h2 id="3-1定位"><a href="#3-1定位" class="headerlink" title="3.1定位"></a>3.1定位</h2><blockquote>
+<p>这个系统在整个游戏里处于什么定位？核心/延伸/辅助/商业？养成/玩法/社交？它与游戏中其他系统构成什么关系？ ——为此你需要简单构建一张游戏全系统的脑图，清晰勾勒出该系统的定位。</p>
+</blockquote>
+<p>定位放在最前面，是因为它和整个游戏系统的构造息息相关——它应该有怎样的体验？它和其他系统间应该有怎样的结构性联系？他在整体资源进出上应该占有多数？这都应当由定位来做一个先行的决定。</p>
+<p><img src="/categories/gallery/image/system/005.jpg"></p>
+<p>例如P5的COOP系统，整体定位是核心的RPG养成系统。这就决定了它在日常中所占的分量，也决定了它在RPG游戏中对战斗系统的反作用影响。最重要的是，这个定位能给出一些体验上的要求，然后就可以按照这个目的去设计机制来构建这个系统（毕竟，我们在第一部分说过，系统是一个机制的集合）。</p>
+<blockquote>
+<p>买贴贴大气功的工具人罢了，我从来没喜欢过这个女人……什么？还有实验要做？马上来！</p>
+</blockquote>
+<br/>
+
+<h2 id="3-2目的和体验"><a href="#3-2目的和体验" class="headerlink" title="3.2目的和体验"></a>3.2目的和体验</h2><blockquote>
+<p>为什么要有这个系统？它弥补了某种属性追求？补缺了某类实力验证？拉动了某种关系建立？满足了某种体验需求？商业化上对活跃/付费产生了某类作用？又或者是他存在着非常多的负面影响，对原有优雅的产品框架拖了后腿甚至造成破坏？</p>
+</blockquote>
+<p>让我们回到最初的定义：</p>
+<blockquote>
+<p>而所谓<strong>游戏系统</strong>，指的是<strong>游戏中由相互作用的若干条设计机制组成的、具有特定功能作用的有机整体</strong>。</p>
+</blockquote>
+<p><strong>“具有特定作用的有机整体”</strong>是定义中的关键。任何系统都是为了构建某个特定的玩法或者解决游戏中的问题而出现的。大家一开始做游戏的时候想必也会完全按照直觉来构建系统，觉得应该有什么就放什么。当然，这些直觉不能没有依据；特别是在特例中，一定呀考虑清楚系统发挥了什么作用、能创造怎样的玩法和体验。</p>
+<p><img src="/categories/gallery/image/system/006.jpg"></p>
+<p>十三机兵防卫圈的思考云图，是一个<strong>信息收集和交互</strong>系统。它的作用非常直接和明显——存放玩家获取的信息，进行随时回放和提示；或是利用信息/道具和场景人物交互，推进剧情。相当于集成了galgame的回放和推进，是信息的<strong>物品栏</strong>。这在一个以叙事为主，信息量大的游戏中是一个很优秀的系统设计。</p>
+<br/>
+
+<h2 id="3-3结构"><a href="#3-3结构" class="headerlink" title="3.3结构"></a>3.3结构</h2><blockquote>
+<p>将系统内部结构拆出，系统内的子系统彼此间的关联或影响关系，系统内的资源流转关系，系统与外部的输入输出及输入输出相对接的系统玩法。</p>
+<p>——就像一张电路图或机械结构图，一图看清楚内部结构和运转规律。</p>
+</blockquote>
+<p><img src="/categories/gallery/image/system/007.png"></p>
+<p>这是我很久之前做的《空洞骑士》依赖堆栈的拆解，可以发现，必须对游戏系统结构有一个清晰的认知，才能至少知道<strong>先做什么，后做什么</strong>，以及<strong>和其它系统有什么关系、关系有多大</strong>。按照这份堆栈，我发现，这类Metroidvania有一个特征是角色成长先行，即必须先设计角色能力的获取，再设计具体的地图，因为这关系到非常具体的流程控制。</p>
+<p>还有一个很有意思的地方，就是在《空洞骑士》的这个系统设计中，角色成长和养成都由道具栏显现，即成长和道具挂钩，是否需要做成这样也是应当在早期确定好的。</p>
+<br/>
+
+<h2 id="3-4资源投放"><a href="#3-4资源投放" class="headerlink" title="3.4资源投放"></a>3.4资源投放</h2><blockquote>
+<ol>
+<li><p>这个系统涉及了哪些资源/数据？</p>
+</li>
+<li><p>在这个系统中，玩家能够做出什么行为？</p>
+</li>
+<li><p>玩家的行为如何导致资源的流动？资源的流动又如何反向影响玩家的行为？</p>
+</li>
+</ol>
+</blockquote>
+<p><img src="/categories/gallery/image/system/008.png"></p>
+<p>在长期运营的游戏中，系统往往需要承担资源进出的功能。如何平衡资源（经济、战斗等）使得整体资源系统不坍塌是一个必须在设计系统前思考的事情，这在MMORPG中往往显得比较复杂。其他游戏也需要经常在经济系统上考虑这些，拿《炉石传说》的战斗通行证举例，通行证能够提供哪些资源？提供多少？上限是多少？玩家获取速度如何？如何促进收费和平衡？这些都要结合定位和目的来看。</p>
+<p>其实除了经济系统，其它系统和资源投放也密切相关。再说《炉石传说》战斗系统中，法力水晶是一种资源、生命值是一种资源、随从也是资源、护甲也是资源……资源可以有很多种，而每一种都需要投入考虑。</p>
+<blockquote>
+<p>顺带一提，炉石的通行证绝对是我见过最傻逼的——游戏加入了通行证奖励反而还变少了。</p>
+</blockquote>
+<br/>
+
+<h2 id="3-5整体交互和概念包装"><a href="#3-5整体交互和概念包装" class="headerlink" title="3.5整体交互和概念包装"></a>3.5整体交互和概念包装</h2><blockquote>
+<p>系统的交互布局如何？主体焦点在哪里，信息区在哪里，操作区在哪里，与其他系统的交互布局是否统一？</p>
+<p>系统的交互路径如何？操作动线平滑且符合视觉与操作习惯？点击步骤尽可能少而便捷？前后界面的交互路径是连贯而无割离感？</p>
+<p>系统的交互体感如何？按键尺寸是否点击舒适，拖拽滑动的敏感性是否恰到好处，点击控件的声色形反应是否产生爽感？</p>
+<p>系统的交互辅助如何？信息文本是否清晰易读，图形信息是否易辨识无歧义，按钮与文字的视觉突出是否便于抓住重点或辅助决策，输入与输出的说明提示是否充分？</p>
+</blockquote>
+<p>系统交互其实是可以最后考虑的东西，它也可以和概念包装等放在一起，成为辅助营造预期体验的手段。它很重要，但是并不影响我们晚点考虑它，因为它并不会触及设计最底层的东西。</p>
+<p><img src="/categories/gallery/image/system/009.jpg"></p>
+<p>《对马岛之魂》探索系统中的引路机制以一种极其优雅的方式交互——触摸板触发指引之风，最大化简化了UI，刚玩完《刺客信条：奥德赛》的我如沐春风，不再被惹眼的图标分散注意力，而是可以专心欣赏风景、骑马、赶路。</p>
+<p>《艾尔登法环》中也将使用类似的交互——黄金之风指引，可以预见将来的开放世界游戏更多地使用这类机制。</p>
+<br/>
+
+<br/>
+
+<p>了解完这些后，就可以按照这个思路拆解或者设计自己的系统了。在独立游戏团队中的全栈策划往往要独立进行整个游戏系统的架构，这是一个很好的机会来建立自己的系统堆栈并且加深其理解的机会。因为游戏系统往往是彼此联系，交错融合的，我们对系统进行设计时也需要反复检验，否则会忽略很多关联——因为最后无论如何，系统在整个制品面前，也只是一个有机的组合成员。</p>
+<hr>
+<br/>
+
+<br/>
+
+
+
+<h1 id="四、参考内容"><a href="#四、参考内容" class="headerlink" title="四、参考内容"></a>四、参考内容</h1><p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/383704948">08. 游戏系统是什么 - 知乎</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/348422772">新手如何拆解游戏系统? - 知乎</a></p>
+<p><a target="_blank" rel="noopener" href="https://xw.qq.com/cmsid/20210927A0EZ0400?pgv_ref=baidutw">什么是游戏系统策划？【策划入门课程002】</a></p>
+
+</div> 
+
+<script>
+    window.onload = detectors();
+</script>
+    <div class="post-footer">
+    <div class="h-line-primary"></div>
+    <nav class="post-nav">
+        <div class="prev-item">
+           
+        </div>
+        <div class="next-item">
+            
+                <div class="icon arrow-right"></div>
+                <div class="post-link">
+                  <a href="/2021/11/03/%E3%80%8A%E5%AF%86%E7%89%B9%E7%BD%97%E5%BE%B7%EF%BC%9A%E7%94%9F%E5%AD%98%E6%81%90%E6%83%A7%E3%80%8B%E6%98%AF%E5%A6%82%E4%BD%95%E6%95%99%E4%BD%A0%E4%B8%8A%E6%89%8B%E7%9A%84/">Next</a>  
+                </div>  
+            
+        </div>
+    </nav>
+</div>
+
+  
+</article>
+        </div>
+      </div>
+      
+      <div class="footer">
+    <div class="flex-container">
+        <div class="footer-text">
+            
+            
+            
+                Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a target="_blank" rel="noopener" href="https://hexo.io/">Frame</a>
+                
+        </div>
+    </div>
+</div>
+
+    </div>
+
+  </body>
+</html>
