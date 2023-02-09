@@ -274,7 +274,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #002a56;
+  color: #ec518c;
 }
 body {
   font-family: 'Inter', 'Noto Sans SC', helvetica, arial;
@@ -568,11 +568,14 @@ body {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.25rem;
-  color: #002a56;
+  color: hsl(303, 81%, 81%);
 }
 .profile .profile-image {
   width: 50%;
 }
+.profile .profile-image2 {
+  width: 25%;
+};
 @media (max-width: 480px) {
   .profile {
     flex-wrap: wrap;
@@ -583,6 +586,9 @@ body {
   }
   .profile .profile-image {
     width: 100%;
+  }
+  .profile .profile-image2 {
+    width: 50%;
   }
 }
 .post-content {
